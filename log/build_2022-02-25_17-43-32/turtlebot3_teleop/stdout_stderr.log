@@ -1,0 +1,23 @@
+/home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  % (opt, underscore_opt)
+/home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+  % (opt, underscore_opt)
+running egg_info
+writing ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+writing dependency_links to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+writing entry points to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+writing requirements to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+writing top-level names to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+reading manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop-2.1.4-py3.6.egg-info' (and everything under it)
+Copying ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop-2.1.4-py3.6.egg-info
+running install_scripts
+Installing teleop_keyboard script to /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+writing list of installed files to '/home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log'

@@ -1,0 +1,46 @@
+[0.768s] Invoking command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed
+[1.406s] /home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.406s]   % (opt, underscore_opt)
+[1.407s] /home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[1.407s]   % (opt, underscore_opt)
+[1.503s] running egg_info
+[1.504s] creating ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info
+[1.504s] writing ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[1.505s] writing dependency_links to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[1.505s] writing entry points to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[1.505s] writing requirements to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[1.505s] writing top-level names to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[1.505s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[1.507s] reading manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[1.509s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[1.509s] running build
+[1.509s] running build_py
+[1.510s] creating /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build
+[1.510s] creating /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib
+[1.510s] creating /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[1.510s] copying turtlebot3_teleop/__init__.py -> /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[1.511s] creating /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[1.511s] copying turtlebot3_teleop/script/teleop_keyboard.py -> /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[1.511s] copying turtlebot3_teleop/script/__init__.py -> /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[1.511s] running install
+[1.511s] running install_lib
+[1.515s] creating /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop
+[1.515s] creating /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script
+[1.515s] copying /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/teleop_keyboard.py -> /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script
+[1.515s] copying /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/__init__.py -> /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script
+[1.516s] copying /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/__init__.py -> /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop
+[1.516s] byte-compiling /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-36.pyc
+[1.516s] byte-compiling /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script/__init__.py to __init__.cpython-36.pyc
+[1.516s] byte-compiling /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/__init__.py to __init__.cpython-36.pyc
+[1.517s] running install_data
+[1.518s] creating /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/ament_index
+[1.520s] creating /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/ament_index/resource_index
+[1.520s] creating /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[1.520s] copying resource/turtlebot3_teleop -> /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[1.520s] copying package.xml -> /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop
+[1.521s] running install_egg_info
+[1.522s] Copying ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop-2.1.4-py3.6.egg-info
+[1.526s] running install_scripts
+[1.567s] Installing teleop_keyboard script to /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[1.567s] writing list of installed files to '/home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log'
+[1.620s] Invoked command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed

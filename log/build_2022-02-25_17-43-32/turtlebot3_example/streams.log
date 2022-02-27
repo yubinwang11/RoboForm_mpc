@@ -1,0 +1,31 @@
+[0.558s] Invoking command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_example': AMENT_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_example --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/install.log --single-version-externally-managed
+[0.985s] /home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.987s]   % (opt, underscore_opt)
+[0.987s] /home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[0.987s]   % (opt, underscore_opt)
+[1.039s] running egg_info
+[1.041s] writing ../../../build/turtlebot3_example/turtlebot3_example.egg-info/PKG-INFO
+[1.041s] writing dependency_links to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/dependency_links.txt
+[1.041s] writing entry points to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/entry_points.txt
+[1.041s] writing requirements to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/requires.txt
+[1.042s] writing top-level names to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/top_level.txt
+[1.046s] reading manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.049s] writing manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.049s] running build
+[1.049s] running build_py
+[1.051s] copying turtlebot3_example/turtlebot3_position_control/turtlebot3_position_control.py -> /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_position_control
+[1.052s] running install
+[1.053s] running install_lib
+[1.055s] copying /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_position_control/turtlebot3_position_control.py -> /home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages/turtlebot3_example/turtlebot3_position_control
+[1.059s] byte-compiling /home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages/turtlebot3_example/turtlebot3_position_control/turtlebot3_position_control.py to turtlebot3_position_control.cpython-36.pyc
+[1.068s] running install_data
+[1.068s] running install_egg_info
+[1.071s] removing '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages/turtlebot3_example-2.1.4-py3.6.egg-info' (and everything under it)
+[1.072s] Copying ../../../build/turtlebot3_example/turtlebot3_example.egg-info to /home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages/turtlebot3_example-2.1.4-py3.6.egg-info
+[1.073s] running install_scripts
+[1.105s] Installing turtlebot3_obstacle_detection script to /home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.105s] Installing turtlebot3_patrol_client script to /home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.105s] Installing turtlebot3_patrol_server script to /home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.106s] Installing turtlebot3_position_control script to /home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[1.106s] writing list of installed files to '/home/yubinwang/turtlebot3_ws/build/turtlebot3_example/install.log'
+[1.154s] Invoked command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_example' returned '0': AMENT_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_example --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/install.log --single-version-externally-managed

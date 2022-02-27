@@ -1,0 +1,61 @@
+[0.069s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_description -DCMAKE_INSTALL_PREFIX=/home/yubinwang/turtlebot3_ws/install/turtlebot3_description
+[0.776s] -- The C compiler identification is GNU 7.5.0
+[0.776s] -- The CXX compiler identification is GNU 7.5.0
+[0.777s] -- Check for working C compiler: /usr/bin/cc
+[0.778s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.778s] -- Detecting C compiler ABI info
+[0.782s] -- Detecting C compiler ABI info - done
+[0.792s] -- Detecting C compile features
+[1.439s] -- Detecting C compile features - done
+[1.441s] -- Check for working CXX compiler: /usr/bin/c++
+[1.692s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.694s] -- Detecting CXX compiler ABI info
+[1.927s] -- Detecting CXX compiler ABI info - done
+[1.936s] -- Detecting CXX compile features
+[2.776s] -- Detecting CXX compile features - done
+[2.782s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[2.846s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[2.847s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.492s] -- Found urdf: 2.2.0 (/opt/ros/dashing/share/urdf/cmake)
+[3.684s] -- Configuring done
+[3.686s] -- Generating done
+[3.688s] -- Build files have been written to: /home/yubinwang/turtlebot3_ws/build/turtlebot3_description
+[3.730s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_description -DCMAKE_INSTALL_PREFIX=/home/yubinwang/turtlebot3_ws/install/turtlebot3_description
+[3.734s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description -- -j8 -l8
+[4.025s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description -- -j8 -l8
+[4.421s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description --target install -- -j8 -l8
+[4.684s] [36mInstall the project...[0m
+[4.735s] -- Install configuration: ""
+[4.735s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes
+[4.735s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels
+[4.735s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl
+[4.736s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl
+[4.745s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases
+[4.746s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl
+[4.774s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl
+[4.787s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl
+[4.812s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors
+[4.812s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae
+[4.813s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg
+[4.814s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae
+[4.828s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl
+[4.829s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg
+[4.830s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/rviz
+[4.830s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz
+[4.830s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf
+[4.830s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
+[4.830s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf
+[4.831s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf
+[4.831s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf
+[4.831s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description
+[4.832s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description
+[4.832s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh
+[4.832s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh
+[4.832s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash
+[4.833s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh
+[4.833s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh
+[4.833s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description
+[4.833s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake
+[4.834s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake
+[4.834s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.xml
+[4.842s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description --target install -- -j8 -l8

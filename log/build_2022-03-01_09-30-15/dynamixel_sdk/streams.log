@@ -1,0 +1,38 @@
+[0.080s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk -- -j8 -l8
+[0.701s] [100%] Built target dynamixel_sdk
+[0.717s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk -- -j8 -l8
+[0.934s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk --target install -- -j8 -l8
+[1.063s] [100%] Built target dynamixel_sdk
+[1.115s] [36mInstall the project...[0m
+[1.132s] -- Install configuration: ""
+[1.133s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include/
+[1.134s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk
+[1.134s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[1.134s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[1.135s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[1.135s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[1.135s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[1.135s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[1.135s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[1.135s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[1.135s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[1.136s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[1.136s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[1.136s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[1.136s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[1.136s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[1.137s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[1.137s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[1.137s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[1.137s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[1.137s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[1.137s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[1.138s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[1.138s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[1.138s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[1.138s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.138s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[1.138s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[1.139s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[1.139s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[1.154s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk --target install -- -j8 -l8

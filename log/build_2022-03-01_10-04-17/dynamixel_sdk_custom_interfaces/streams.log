@@ -1,0 +1,127 @@
+[0.076s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[0.639s] [  2%] Built target dynamixel_sdk_custom_interfaces__cpp
+[0.640s] [ 13%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+[0.640s] [ 24%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[0.641s] [ 35%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[0.641s] [ 45%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.642s] [ 56%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[0.643s] [ 67%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[0.644s] [ 78%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[0.644s] [ 78%] Built target dynamixel_sdk_custom_interfaces
+[0.645s] [ 81%] Built target dynamixel_sdk_custom_interfaces__py
+[0.645s] [ 89%] Built target dynamixel_sdk_custom_interfaces__python
+[0.645s] [ 94%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext
+[0.647s] [100%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.661s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[1.054s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces --target install -- -j8 -l8
+[1.188s] [  2%] Built target dynamixel_sdk_custom_interfaces__cpp
+[1.197s] [ 13%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+[1.237s] [ 24%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.247s] [ 35%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[1.255s] [ 45%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[1.302s] [ 56%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[1.308s] [ 67%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[1.368s] [ 78%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[1.404s] [ 78%] Built target dynamixel_sdk_custom_interfaces
+[1.443s] [ 81%] Built target dynamixel_sdk_custom_interfaces__py
+[1.487s] [ 89%] Built target dynamixel_sdk_custom_interfaces__python
+[1.533s] [ 94%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.539s] [100%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext
+[1.573s] [36mInstall the project...[0m
+[1.586s] -- Install configuration: ""
+[1.587s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_custom_interfaces
+[1.587s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[1.588s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[1.588s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__struct.hpp
+[1.588s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+[1.588s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__traits.hpp
+[1.588s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[1.588s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__struct.hpp
+[1.589s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position.hpp
+[1.589s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__traits.hpp
+[1.589s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[1.589s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[1.589s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__functions.c
+[1.590s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__struct.h
+[1.590s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.h
+[1.590s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__functions.h
+[1.590s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.590s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position.h
+[1.590s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[1.591s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__struct.h
+[1.591s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__functions.c
+[1.591s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position.h
+[1.591s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__functions.h
+[1.591s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.h
+[1.592s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.sh
+[1.592s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
+[1.592s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
+[1.592s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
+[1.593s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[1.593s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[1.593s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.c
+[1.593s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.593s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__rosidl_typesupport_introspection_c.h
+[1.594s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[1.594s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__rosidl_typesupport_introspection_c.h
+[1.594s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.c
+[1.594s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so
+[1.594s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[1.595s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[1.595s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp
+[1.595s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__rosidl_typesupport_introspection_cpp.hpp
+[1.595s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[1.595s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__rosidl_typesupport_introspection_cpp.hpp
+[1.595s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp
+[1.595s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.596s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[1.596s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[1.596s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__rosidl_typesupport_fastrtps_c.h
+[1.596s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.596s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[1.596s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__rosidl_typesupport_fastrtps_c.h
+[1.596s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.597s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces
+[1.597s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg
+[1.597s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/dds_fastrtps
+[1.597s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.597s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/msg/set_position__rosidl_typesupport_fastrtps_cpp.hpp
+[1.597s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv
+[1.597s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/dds_fastrtps
+[1.598s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/srv/get_position__rosidl_typesupport_fastrtps_cpp.hpp
+[1.598s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.598s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.sh
+[1.598s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/__init__.py
+[1.652s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/msg
+[1.652s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c
+[1.652s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py
+[1.652s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py
+[1.652s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/srv
+[1.652s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c
+[1.652s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py
+[1.653s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py
+[1.653s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+[1.653s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+[1.654s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__python.so
+[1.654s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl
+[1.655s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl
+[1.655s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+[1.655s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv
+[1.655s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition_Request.msg
+[1.655s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition_Response.msg
+[1.656s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces
+[1.656s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_custom_interfaces
+[1.656s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.sh
+[1.656s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.sh
+[1.656s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.bash
+[1.656s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.sh
+[1.657s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.zsh
+[1.657s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/packages/dynamixel_sdk_custom_interfaces
+[1.657s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.657s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.657s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.657s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.658s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig.cmake
+[1.658s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig-version.cmake
+[1.658s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.xml
+[1.660s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces --target install -- -j8 -l8

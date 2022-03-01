@@ -1,0 +1,25 @@
+[0.660s] Invoking command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed
+[1.154s] /home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.154s]   % (opt, underscore_opt)
+[1.155s] /home/yubinwang/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[1.155s]   % (opt, underscore_opt)
+[1.205s] running egg_info
+[1.207s] writing ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[1.207s] writing dependency_links to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[1.207s] writing entry points to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[1.207s] writing requirements to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[1.208s] writing top-level names to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[1.210s] reading manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[1.212s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[1.213s] running build
+[1.213s] running build_py
+[1.213s] running install
+[1.214s] running install_lib
+[1.216s] running install_data
+[1.217s] running install_egg_info
+[1.219s] removing '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop-2.1.4-py3.6.egg-info' (and everything under it)
+[1.220s] Copying ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop-2.1.4-py3.6.egg-info
+[1.221s] running install_scripts
+[1.248s] Installing teleop_keyboard script to /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[1.248s] writing list of installed files to '/home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log'
+[1.284s] Invoked command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed

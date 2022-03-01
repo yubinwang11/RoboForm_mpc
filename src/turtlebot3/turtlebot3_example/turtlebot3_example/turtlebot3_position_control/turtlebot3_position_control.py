@@ -62,21 +62,9 @@ class Turtlebot3PositionControl(Node):
         ** Initialise variables
         ************************************************************"""
         self.form_num=1     
-        self.node_num=6 # default 6
+        self.node_num=1 # default 6
         self.trajectory_len=79
         self.time=0.1
-        self.count=0.0
-        self.position_init=1
-
-        self.axis=5
-        self.vw=self.axis/5
-
-        self.Kv=0.22/2*self.vw
-        self.Kw=2.84/2*self.vw/math.pi
-        self.B_oz=0.0
-        self.B_of=0.0
-        #self.B_safed=0.1
-        self.B_safed=0.08
         self.buttonstart=0
 
         ######## initialize mpc ##########
@@ -125,11 +113,6 @@ class Turtlebot3PositionControl(Node):
         #print("g: ", g)
 
         ######## initialize plot #########
-        self.r_o=np.array([0.2 for x in range(self.node_num)])
-        self.d_d=np.array([[0.0 for x in range(self.node_num)] for y in range(self.node_num)])
-        self.d_1=np.array([[0.0 for x in range(self.node_num)] for y in range(self.node_num)])
-        self.d_2=np.array([[0.0 for x in range(self.node_num)] for y in range(self.node_num)])
-        self.d_t=np.array([[0.0 for x in range(self.node_num)] for y in range(self.node_num)])
         
         self.x_cur_trajectory=np.array([[0.0 for x in range(self.trajectory_len+1)] for y in range(self.node_num)]) 
         self.y_cur_trajectory=np.array([[0.0 for x in range(self.trajectory_len+1)] for y in range(self.node_num)]) 
@@ -143,28 +126,14 @@ class Turtlebot3PositionControl(Node):
         self.x_right=np.array([0.0 for x in range(self.node_num)])
         self.y_right=np.array([0.0 for x in range(self.node_num)])
 
-        self.x_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
-        self.y_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
+        self.x_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)]).T
+        self.y_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)]).T
         
         self.x_curr=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
         self.y_curr=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
         
         self.x_body=[0.0 for x in range(self.node_num)]
         self.y_body=[0.0 for x in range(self.node_num)]
-
-        self.x_o_body=[0.0 for x in range(self.node_num)]
-        self.y_o_body=[0.0 for x in range(self.node_num)]
-
-        self.x_tar_body=[0.0 for x in range(self.node_num)]
-        self.y_tar_body=[0.0 for x in range(self.node_num)]
-
-
-        self.v_cur=np.array([0.0 for x in range(self.node_num)])
-        self.w_cur=np.array([0.0 for x in range(self.node_num)])
-
-        
-        
-        self.pose_state_cur=np.array([0.0 for x in range(self.node_num)])
 
         self.odom = Odometry()
         self.twisttb30 = Twist()
@@ -174,16 +143,9 @@ class Turtlebot3PositionControl(Node):
         #self.twisttb34 = Twist()
         #self.twisttb35 = Twist()
 
-        self.gama=np.array([1.000 for x in range(self.node_num)])
-       
-        self.x_target=np.array([0.0 for x in range(self.node_num)])   
-        self.y_target=np.array([0.0 for x in range(self.node_num)])
-        self.d_target=np.array([0.0 for x in range(self.node_num)])
-
-
         self.x_cur=0     #[2.0,2.0,2.0,2.0,2.0,2.0]
         self.y_cur=0 
-        self.d_cur=1
+        self.d_cur=0
         self.thr = self.d_cur
         self.Xr = np.array([[self.x_cur], [self.y_cur], [self.thr]])
 
@@ -347,7 +309,8 @@ class Turtlebot3PositionControl(Node):
         self.args = {'lbg': np.concatenate((np.array([[0.0],[0.0],[0.0]]), np.matlib.repmat(np.array([[0.0],[0.0],[0.0],[0.05]]),self.N,1)), axis=0), 'ubg': np.concatenate((np.array([[0.0],[0.0],[0.0]]), np.matlib.repmat(np.array([[0.0],[0.0],[0.0],[np.Inf]]),self.N,1)), axis=0), \
         'lbx': np.concatenate((np.matlib.repmat(np.array([[-10],[-10],[-2*math.pi]]),self.N+1,1),np.matlib.repmat(np.array([[self.v_min],[self.omega_min]]),self.N,1)), axis=0), \
         'ubx': np.concatenate((np.matlib.repmat(np.array([[+10],[+10],[+2*math.pi]]),self.N+1,1),np.matlib.repmat(np.array([[self.v_max],[self.omega_max]]),self.N,1)), axis=0)}
-        # print("args: ", args) print(args['lbg'].shape)
+        # print("args: ", args) 
+        print(self.args['lbg'].shape)
 
         self.sim_tim = 1000
         self.t0 = 0 #;
@@ -370,7 +333,8 @@ class Turtlebot3PositionControl(Node):
 
                                                                            # Maximum simulation time
     def start_mpc(self):
-        num = 0
+        self.number = 0
+        num = self.number
         print('start MPC', num)
         # Start MPC
         mpciter = 0
@@ -436,7 +400,7 @@ class Turtlebot3PositionControl(Node):
 
             # Apply the control and shift the solution
             self.t0, self.x0, self.u0 = shift(self.T, self.t0, self.x0, self.u, self.f)
-            print(self.x0)
+            #print(self.x0)
 
             self.xx[0:,mpciter+1:mpciter+2] = self.x0
             #print("xx: ", self.xx)
@@ -458,19 +422,22 @@ class Turtlebot3PositionControl(Node):
             #self.x0 = np.array([self.Xr[0], self.Xr[1], self.Xr[2]])   
 
             #print(time.clock(), self.u_cl[mpciter,0], self.u_cl[mpciter,1], self.Xr[0], self.Xr[1], self.Xr[2])
-
+            print(self.x0)
             self.ne = LA.norm(self.x0-self.xs)
             # Stop Condition
             if self.ne < 0.1:
                 goal_idx = goal_idx + 1
                 if goal_idx > ng:
                     mpc_start = False
+                    print("mpciter, error: ", mpciter, self.ne)
                     print("Robot has arrived to GOAL point!")
+                    exit()
 
             print("mpciter, error: ", mpciter, self.ne)
+            self.unicycle_simulation()
             mpciter = mpciter + 1
             num = num + 1
-
+            self.number = num
         # main_loop_time = toc(main_loop);
         #self.ss_error = LA.norm(self.x0-self.xs)
         #print("Steady State Error: ", self.ss_error)
@@ -483,7 +450,7 @@ class Turtlebot3PositionControl(Node):
         # tc0 = time.clock()
         # tc = 0.0
         # print("time: ", tc0)
-    
+    '''
     def mpc_implement(self):
         
         plt.figure(1)
@@ -501,12 +468,11 @@ class Turtlebot3PositionControl(Node):
             self.unicycle_simulation()
             self.start_mpc() 
              
-    '''  
+    ''' 
     def mpc_implement(self):
         self.pre_mpc()
-        self.start_mpc() 
-        self.unicycle_simulation() 
-    '''
+        self.start_mpc()  
+    
     def start(self,event):
         if self.buttonstart==0:
             self.buttonstart=1
@@ -516,26 +482,17 @@ class Turtlebot3PositionControl(Node):
 
 ##########################################################################################################################          
     def unicycle_simulation(self):
-        roo=np.array([0.0])
         r = 0.2
-        ro=self.B_safed+r
-        sumx=0
-        sumy=0
-        
+     
         theta = np.arange(0, 2*np.pi, 0.01)
         self.x_cur = self.x0[0]
         self.y_cur = self.x0[1]
+        #print(self.x_cur)
+        #print(self.y_cur)
 
         self.x_body = self.x_cur + r * np.cos(theta)
         self.y_body = self.y_cur + r * np.sin(theta)
-
-        self.x_tar_body = self.x_target + 0.2 * np.cos(theta)
-        self.y_tar_body = self.y_target + 0.2 * np.sin(theta)
-
-        self.x_o_body = self.x_cur + roo * np.cos(theta)
-        self.y_o_body = self.y_cur + roo * np.sin(theta)
-
-            
+         
         self.x_head=self.x_cur+r*math.cos(self.d_cur)
         self.y_head=self.y_cur+r*math.sin(self.d_cur)
 
@@ -552,45 +509,30 @@ class Turtlebot3PositionControl(Node):
         self.y_curl[1]=self.y_cur
 
 
-        plt.plot(self.x_curl, self.y_curl,self.colorArr)
+        plt.plot(self.x_curl, self.y_curl)
         
-        plt.plot(self.x_head,self.y_head,self.colorArr,self.x_left,self.y_left,self.colorArr,self.x_right,self.y_right,self.colorArr,self.x_cur,self.y_cur,self.colorArr,marker='.')
-        
-        plt.plot(self.x_body,self.y_body,self.colorArr,self.x_tar_body,self.y_tar_body,self.colorArr)
+        #plt.plot(self.x_head,self.y_head,self.colorArr,self.x_left,self.y_left,self.colorArr,self.x_right,self.y_right,self.colorArr,self.x_cur,self.y_cur,self.colorArr,marker='.')
+        plt.plot(self.x_head,self.y_head,marker='.')
+        plt.plot(self.x_left,self.y_left,marker='.')
+        plt.plot(self.x_right,self.y_right,marker='.')
+        plt.plot(self.x_cur,self.y_cur,marker='.')
+        plt.plot(self.xs[0],self.xs[1], 'b')
 
-        plt.plot(self.x_target,self.y_target,self.colorArr)
 
-        plt.plot(self.axis*3,self.axis*2,self.colorArr,marker='*')
-        plt.plot(self.axis*3,-self.axis*2,self.colorArr,marker='*')
-        plt.plot(-self.axis*3,self.axis*2,self.colorArr,marker='*')
-        plt.plot(-self.axis*3,-self.axis*2,self.colorArr,marker='*')
-            
-        #plt.plot(self.x_cur_trajectory[i],self.y_cur_trajectory[i],self.colorArr[i])       
+        plt.plot(self.x_body,self.y_body)
+      
         '''
         plt.text(self.x_cur[i], self.y_cur[i]-self.axis/10, '%.2f' %self.x_cur[i], ha='center', va= 'bottom',fontsize=6,color = self.colorArr[i])
         plt.text(self.x_cur[i], self.y_cur[i]-self.axis/5, '%.2f' %self.y_cur[i], ha='center', va= 'bottom',fontsize=6,color = self.colorArr[i])
         '''
-        x=-self.axis*3
-        y=self.axis*2
-        d1=self.axis/2
-        d2=self.axis/10 #0.5
-        
-        fsize=9
-       
-        x=-self.axis*3
-        y=0
-        d3=self.axis/10
-        fsize=10
 
         
         plt.grid(True)
         plt.axis('equal')
-        plt.axis([-self.axis*3,self.axis*3,-self.axis*2,self.axis*2])
 
-        if self.count<=10000:
+        if self.number<=10000:
             plt.pause(0.01)
             plt.clf()
-            self.count=self.count+1.0
         else :
             plt.show()   
 
@@ -663,12 +605,12 @@ def modify(th):
 
 def shift(T, t0, x0, u, f):
     st = x0
-    print(x0)
+    #print(x0)
     con = np.transpose(u[0:1,0:])
     f_value = f(st, con)
     st = st + (T*f_value)
     x0 = st.full()
-    print(x0)
+    #print(x0)
     t0 = t0 + T
     ushape = np.shape(u)
     u0 = np.concatenate(( u[1:ushape[0],0:],  u[ushape[0]-1:ushape[0],0:]), axis=0)

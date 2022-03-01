@@ -1,6 +1,0 @@
-/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl
-/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl
-/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl
-/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl
-/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl
-/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl

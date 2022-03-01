@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_462cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_462cc.dir/build.make CMakeFiles/cmTC_462cc.dir/build
+make[1]: 进入目录“/home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_462cc.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_462cc.dir/CheckSymbolExists.c.o   -c /home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_462cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_462cc.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_462cc.dir/CheckSymbolExists.c.o  -o cmTC_462cc 
+CMakeFiles/cmTC_462cc.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_462cc.dir/build.make:97: recipe for target 'cmTC_462cc' failed
+make[1]: *** [cmTC_462cc] Error 1
+make[1]: 离开目录“/home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_462cc/fast' failed
+make: *** [cmTC_462cc/fast] Error 2
+
+File /home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fdcd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fdcd3.dir/build.make CMakeFiles/cmTC_fdcd3.dir/build
+make[1]: 进入目录“/home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fdcd3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fdcd3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fdcd3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdcd3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_fdcd3.dir/CheckFunctionExists.c.o  -o cmTC_fdcd3 -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fdcd3.dir/build.make:97: recipe for target 'cmTC_fdcd3' failed
+make[1]: *** [cmTC_fdcd3] Error 1
+make[1]: 离开目录“/home/yubinwang/turtlebot3_ws/build/turtlebot3_node/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_fdcd3/fast' failed
+make: *** [cmTC_fdcd3/fast] Error 2
+
+

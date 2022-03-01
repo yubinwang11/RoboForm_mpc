@@ -1,0 +1,46 @@
+[0.064s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake /home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer
+[0.688s] -- The C compiler identification is GNU 7.5.0
+[0.688s] -- The CXX compiler identification is GNU 7.5.0
+[0.688s] -- Check for working C compiler: /usr/bin/cc
+[0.688s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.688s] -- Detecting C compiler ABI info
+[0.910s] -- Detecting C compiler ABI info - done
+[0.919s] -- Detecting C compile features
+[1.530s] -- Detecting C compile features - done
+[1.534s] -- Check for working CXX compiler: /usr/bin/c++
+[1.706s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.707s] -- Detecting CXX compiler ABI info
+[1.903s] -- Detecting CXX compiler ABI info - done
+[1.909s] -- Detecting CXX compile features
+[2.699s] -- Detecting CXX compile features - done
+[2.705s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[2.757s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[2.757s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.392s] -- Configuring done
+[3.395s] -- Generating done
+[3.396s] -- Build files have been written to: /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer
+[3.407s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake /home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer
+[3.409s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer -- -j8 -l8
+[3.502s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer -- -j8 -l8
+[3.652s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer --target install -- -j8 -l8
+[3.964s] [36mInstall the project...[0m
+[4.004s] -- Install configuration: ""
+[4.004s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config
+[4.004s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[4.004s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch
+[4.004s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[4.005s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[4.005s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz
+[4.005s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[4.005s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[4.005s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[4.005s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[4.006s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[4.006s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[4.007s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[4.007s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[4.007s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[4.008s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[4.008s] -- Installing: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[4.008s] -- Up-to-date: /home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[4.060s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer --target install -- -j8 -l8

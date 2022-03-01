@@ -1,0 +1,15 @@
+file(REMOVE_RECURSE
+  "rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/set_position__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/get_position__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.c"
+  "rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.c"
+  "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.c.o"
+  "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.c.o"
+  "libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

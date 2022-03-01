@@ -1,0 +1,15 @@
+[0.076s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8
+[0.629s] [ 11%] Built target turtlebot3_msgs__rosidl_generator_c
+[0.630s] [ 13%] Built target turtlebot3_msgs__cpp
+[0.631s] [ 24%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c
+[0.631s] [ 36%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_cpp
+[0.631s] [ 47%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp
+[0.632s] [ 59%] Built target turtlebot3_msgs__rosidl_typesupport_cpp
+[0.632s] [ 71%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c
+[0.632s] [ 82%] Built target turtlebot3_msgs__rosidl_typesupport_c
+[0.633s] [ 82%] Built target turtlebot3_msgs
+[0.634s] [ 84%] Built target turtlebot3_msgs__py
+[0.634s] [ 94%] Built target turtlebot3_msgs__python
+[0.635s] [ 97%] Built target turtlebot3_msgs__rosidl_typesupport_c__pyext
+[0.636s] [100%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.641s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8

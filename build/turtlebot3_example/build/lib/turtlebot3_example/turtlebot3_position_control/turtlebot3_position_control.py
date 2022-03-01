@@ -131,11 +131,6 @@ class Turtlebot3PositionControl(Node):
         #print("R: ", R)
 
 
-        # obstacle info
-        self.obs1_r = 0.15   # obstacle's diameter
-        self.obs1_x = 0.4
-        self.obs1_y = 1.1
-
         self.st  = self.X[:,0]                                                                    # initial state
         #print("st_type: ", self.st.type)
         self.g = vertcat(self.st-self.P[0:self.n_states], np.matlib.repmat(np.array([3.5]), self.M, 1))   
@@ -171,13 +166,16 @@ class Turtlebot3PositionControl(Node):
         #self.twisttb33 = Twist()
         #self.twisttb34 = Twist()
         #self.twisttb35 = Twist()
-
+        '''
         self.x_cur=0     #[2.0,2.0,2.0,2.0,2.0,2.0]
         self.y_cur=0 
         self.d_cur=0
         self.thr = self.d_cur
         self.Xr = np.array([[self.x_cur], [self.y_cur], [self.thr]])
-
+        '''
+        self.x_cur=np.array([0.0 for x in range(self.node_num)])
+        self.y_cur=np.array([0.0 for x in range(self.node_num)])
+        self.theta_cur=np.array([0.0 for x in range(self.node_num)])
         
 ##########################################################################################################
         self.colorArr = ['r','g','b','c','m','k','gray','tan','pink','navy','r','g','b','c','m','k','gray','tan','pink','navy']
@@ -442,7 +440,7 @@ class Turtlebot3PositionControl(Node):
 
             # Apply the control and shift the solution
             self.t0, self.x0, self.u0 = shift(self.T, self.t0, self.x0, self.u, self.f)
-            #print(self.x0)
+            print(self.x0.shape)
 
             self.xx[0:,mpciter+1:mpciter+2] = self.x0
             #print("xx: ", self.xx)
@@ -520,44 +518,53 @@ class Turtlebot3PositionControl(Node):
 
 ##########################################################################################################################          
     def unicycle_simulation(self):
-        r = 0.2
+        r = 0.15
      
         theta = np.arange(0, 2*np.pi, 0.01)
-        self.x_cur = self.x0[0]
-        self.y_cur = self.x0[1]
+        self.x_cur[0] = self.x0[0]; self.x_cur[1] = self.x0[3]; self.x_cur[2] = self.x0[6]; 
+        self.x_cur[3] = self.x0[9]; self.x_cur[4] = self.x0[12]; self.x_cur[5] = self.x0[15]; 
+        self.y_cur[0] = self.x0[1]; self.y_cur[1] = self.x0[4]; self.y_cur[2] = self.x0[7]; 
+        self.y_cur[3] = self.x0[10]; self.y_cur[4] = self.x0[13]; self.y_cur[5] = self.x0[16]; 
+        self.theta_cur[0] = self.x0[2]; self.theta_cur[1] = self.x0[5]; self.theta_cur[2] = self.x0[8]; 
+        self.theta_cur[3] = self.x0[11]; self.theta_cur[4] = self.x0[14]; self.theta_cur[5] = self.x0[17]; 
         #print(self.x_cur)
         #print(self.y_cur)
 
-        self.x_body = self.x_cur + r * np.cos(theta)
-        self.y_body = self.y_cur + r * np.sin(theta)
-         
-        self.x_head=self.x_cur+r*math.cos(self.d_cur)
-        self.y_head=self.y_cur+r*math.sin(self.d_cur)
+        for i in range(0, self.node_num, 1):
+            self.x_body[i] = self.x_cur[i] + r * np.cos(theta)
+            self.y_body[i] = self.y_cur[i] + r * np.sin(theta)
+            
+            self.x_head[i]=self.x_cur[i]+r*math.cos(self.theta_cur[i])
+            self.y_head[i]=self.y_cur[i]+r*math.sin(self.theta_cur[i])
 
-        self.x_left=self.x_cur-r*math.cos(self.d_cur+1.57)
-        self.y_left=self.y_cur-r*math.sin(self.d_cur+1.57)
+            self.x_left[i]=self.x_cur[i]-r*math.cos(self.theta_cur[i]+1.57)
+            self.y_left[i]=self.y_cur[i]-r*math.sin(self.theta_cur[i]+1.57)
 
-        self.x_right=self.x_cur-r*math.cos(self.d_cur-1.57)
-        self.y_right=self.y_cur-r*math.sin(self.d_cur-1.57)
+            self.x_right[i]=self.x_cur[i]-r*math.cos(self.theta_cur[i]-1.57)
+            self.y_right[i]=self.y_cur[i]-r*math.sin(self.theta_cur[i]-1.57)
+            '''
+            self.x_curl[i][0]=self.x_head[i]
+            self.x_curl[i][1]=self.x_cur[i]
 
-        self.x_curl[0]=self.x_head
-        self.x_curl[1]=self.x_cur
+            self.y_curl[i][0]=self.y_head[i]
+            self.y_curl[i][1]=self.y_cur[i]
+            '''
+        for i in range(0, self.node_num, 1):
+            #plt.plot(self.x_curl, self.y_curl)        
+            #plt.plot(self.x_head,self.y_head,self.colorArr,self.x_left,self.y_left,self.colorArr,self.x_right,self.y_right,self.colorArr,self.x_cur,self.y_cur,self.colorArr,marker='.')
+            '''
+            plt.plot(self.x_head,self.y_head,marker='.')
+            plt.plot(self.x_left,self.y_left,marker='.')
+            plt.plot(self.x_right,self.y_right,marker='.')
+            plt.plot(self.x_cur,self.y_cur,marker='.')
+            plt.plot(self.x_body,self.y_body)
+            '''
+            #plt.plot(self.x_curl[i], self.y_curl[i],self.colorArr[i])
+            
+            plt.plot(self.x_head[i],self.y_head[i],self.colorArr[i],self.x_left[i],self.y_left[i],self.colorArr[i],self.x_right[i],self.y_right[i],self.colorArr[i],self.x_cur[i],self.y_cur[i],self.colorArr[i],marker='.')
+            
+            plt.plot(self.x_body[i],self.y_body[i],self.colorArr[i])
 
-        self.y_curl[0]=self.y_head
-        self.y_curl[1]=self.y_cur
-
-
-        plt.plot(self.x_curl, self.y_curl)
-        
-        #plt.plot(self.x_head,self.y_head,self.colorArr,self.x_left,self.y_left,self.colorArr,self.x_right,self.y_right,self.colorArr,self.x_cur,self.y_cur,self.colorArr,marker='.')
-        plt.plot(self.x_head,self.y_head,marker='.')
-        plt.plot(self.x_left,self.y_left,marker='.')
-        plt.plot(self.x_right,self.y_right,marker='.')
-        plt.plot(self.x_cur,self.y_cur,marker='.')
-        plt.plot(self.xs[0],self.xs[1], 'b')
-
-
-        plt.plot(self.x_body,self.y_body)
       
         '''
         plt.text(self.x_cur[i], self.y_cur[i]-self.axis/10, '%.2f' %self.x_cur[i], ha='center', va= 'bottom',fontsize=6,color = self.colorArr[i])

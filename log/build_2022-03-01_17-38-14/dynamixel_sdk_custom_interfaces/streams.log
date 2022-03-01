@@ -1,0 +1,15 @@
+[0.074s] Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[0.621s] [  2%] Built target dynamixel_sdk_custom_interfaces__cpp
+[0.621s] [ 13%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+[0.621s] [ 24%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[0.621s] [ 35%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.621s] [ 45%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[0.621s] [ 56%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[0.621s] [ 67%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[0.621s] [ 78%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[0.621s] [ 78%] Built target dynamixel_sdk_custom_interfaces
+[0.622s] [ 81%] Built target dynamixel_sdk_custom_interfaces__py
+[0.622s] [ 89%] Built target dynamixel_sdk_custom_interfaces__python
+[0.622s] [ 94%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext
+[0.622s] [100%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.640s] Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8

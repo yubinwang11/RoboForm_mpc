@@ -1,0 +1,862 @@
+[0.230s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.230s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f62b2d9ad68>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f62b2d9ad68>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f62b2da3128>)
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.239s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yubinwang/turtlebot3_ws'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'ros'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['cmake', 'python']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'cmake'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extensions ['python_setup_py']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK) by extension 'python_setup_py'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk' with type 'ros.ament_cmake' and name 'dynamixel_sdk'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with type 'ros.ament_cmake' and name 'dynamixel_sdk_custom_interfaces'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/DynamixelSDK/dynamixel_sdk_examples) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/DynamixelSDK/dynamixel_sdk_examples' with type 'ros.ament_cmake' and name 'dynamixel_sdk_examples'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3' with type 'ros.ament_cmake' and name 'turtlebot3'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_bringup) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_bringup' with type 'ros.ament_cmake' and name 'turtlebot3_bringup'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_cartographer) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_cartographer' with type 'ros.ament_cmake' and name 'turtlebot3_cartographer'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_description) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_description' with type 'ros.ament_cmake' and name 'turtlebot3_description'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_example) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_example' with type 'ros.ament_python' and name 'turtlebot3_example'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'colcon_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['colcon_meta']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'colcon_meta'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_navigation2) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_navigation2' with type 'ros.ament_cmake' and name 'turtlebot3_navigation2'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_node) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_node' with type 'ros.ament_cmake' and name 'turtlebot3_node'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3/turtlebot3_teleop) by extension 'ros'
+[0.282s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3/turtlebot3_teleop' with type 'ros.ament_python' and name 'turtlebot3_teleop'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_msgs) by extension 'ros'
+[0.284s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_msgs' with type 'ros.ament_cmake' and name 'turtlebot3_msgs'
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer', 'symlink_install': False, 'test_result_base': None}
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_description', 'symlink_install': False, 'test_result_base': None}
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_target' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.351s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_args' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target' from command line to 'None'
+[0.354s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.355s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.355s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2', 'symlink_install': False, 'test_result_base': None}
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_target' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.359s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.363s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk_examples', 'symlink_install': False, 'test_result_base': None}
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_target' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.368s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_example', 'symlink_install': False, 'test_result_base': None}
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_args' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_target' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.372s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.372s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.372s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.372s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.372s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.372s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_node', 'symlink_install': False, 'test_result_base': None}
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_target' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.376s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_first' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_force_configure' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'ament_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.380s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yubinwang/turtlebot3_ws/build/turtlebot3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yubinwang/turtlebot3_ws/install/turtlebot3', 'merge_install': False, 'path': '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3', 'symlink_install': False, 'test_result_base': None}
+[0.381s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.383s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.383s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk' with build type 'ament_cmake'
+[0.384s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk'
+[0.388s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.389s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.389s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.393s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.396s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3_msgs' with build type 'ament_cmake'
+[0.397s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3_msgs'
+[0.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.402s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.405s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_description' with build type 'ament_cmake'
+[0.405s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_description'
+[0.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.412s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.416s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces' with build type 'ament_cmake'
+[0.416s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces'
+[0.418s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.418s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.423s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.427s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer' with build type 'ament_cmake'
+[0.427s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer'
+[0.429s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.429s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.434s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.437s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2' with build type 'ament_cmake'
+[0.438s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2'
+[0.439s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.439s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.444s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.447s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop' with build type 'ament_python'
+[0.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_teleop', 'ament_prefix_path')
+[0.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.ps1'
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.dsv'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/ament_prefix_path.sh'
+[0.455s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.455s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.461s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk -- -j8 -l8
+[0.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8
+[0.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description -- -j8 -l8
+[0.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[0.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer -- -j8 -l8
+[0.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[1.037s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop'
+[1.039s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.039s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.044s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[1.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk -- -j8 -l8
+[1.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs -- -j8 -l8
+[1.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description -- -j8 -l8
+[1.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[1.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[1.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer -- -j8 -l8
+[1.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed
+[1.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description --target install -- -j8 -l8
+[1.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2 --target install -- -j8 -l8
+[1.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer --target install -- -j8 -l8
+[1.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk --target install -- -j8 -l8
+[1.336s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[1.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_navigation2 --target install -- -j8 -l8
+[1.352s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2' for CMake module files
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2' for CMake config files
+[1.354s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[1.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[1.358s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[1.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[1.361s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/bin'
+[1.361s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/lib/python3.6/site-packages'
+[1.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[1.365s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[1.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[1.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[1.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[1.370s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[1.377s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description' for CMake module files
+[1.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_description --target install -- -j8 -l8
+[1.381s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description' for CMake config files
+[1.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[1.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[1.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[1.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/bin'
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/lib/python3.6/site-packages'
+[1.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[1.386s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[1.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[1.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[1.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[1.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[1.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces --target install -- -j8 -l8
+[1.405s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer' for CMake module files
+[1.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_cartographer --target install -- -j8 -l8
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer' for CMake config files
+[1.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[1.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[1.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[1.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[1.415s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/bin'
+[1.415s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[1.415s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/lib/python3.6/site-packages'
+[1.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[1.417s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[1.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[1.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[1.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[1.419s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[1.427s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk' for CMake module files
+[1.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk --target install -- -j8 -l8
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk' for CMake config files
+[1.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[1.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[1.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[1.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib'
+[1.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[1.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[1.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[1.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/bin'
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib/python3.6/site-packages'
+[1.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[1.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[1.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[1.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[1.451s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation2)
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2' for CMake module files
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2' for CMake config files
+[1.458s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation2', 'cmake_prefix_path')
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.ps1'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.dsv'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/hook/cmake_prefix_path.sh'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/bin'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/lib/pkgconfig/turtlebot3_navigation2.pc'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/lib/python3.6/site-packages'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.ps1'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.sh'
+[1.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.bash'
+[1.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.zsh'
+[1.472s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2/share/colcon-core/packages/turtlebot3_navigation2)
+[1.486s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[1.488s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description' for CMake module files
+[1.489s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description' for CMake config files
+[1.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[1.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[1.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[1.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[1.494s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/bin'
+[1.494s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[1.494s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/lib/python3.6/site-packages'
+[1.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[1.497s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[1.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[1.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[1.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[1.500s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[1.505s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[1.507s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer' for CMake module files
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer' for CMake config files
+[1.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[1.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[1.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[1.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/bin'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/lib/python3.6/site-packages'
+[1.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[1.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[1.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[1.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[1.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[1.518s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[1.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[1.637s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk' for CMake module files
+[1.639s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk' for CMake config files
+[1.639s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[1.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[1.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[1.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[1.644s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib'
+[1.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[1.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[1.646s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/bin'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib/python3.6/site-packages'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[1.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[1.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[1.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[1.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[1.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs --target install -- -j8 -l8
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop' for CMake module files
+[1.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed
+[1.763s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop' for CMake config files
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/bin'
+[1.766s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/pkgconfig/turtlebot3_teleop.pc'
+[1.766s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages'
+[1.766s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_teleop', 'pythonpath')
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.ps1'
+[1.768s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.dsv'
+[1.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/hook/pythonpath.sh'
+[1.769s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_teleop)
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.ps1'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.dsv'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.sh'
+[1.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.bash'
+[1.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/turtlebot3_teleop/package.zsh'
+[1.774s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/share/colcon-core/packages/turtlebot3_teleop)
+[2.005s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[2.007s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[2.008s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[2.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[2.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[2.013s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib'
+[2.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[2.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[2.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[2.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/bin'
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages'
+[2.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'pythonpath')
+[2.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.ps1'
+[2.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces --target install -- -j8 -l8
+[2.020s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.dsv'
+[2.020s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.sh'
+[2.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[2.024s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[2.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[2.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[2.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[2.026s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[2.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[2.129s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[2.130s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[2.131s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[2.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[2.133s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[2.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[2.134s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib'
+[2.134s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[2.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[2.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[2.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[2.137s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/bin'
+[2.137s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[2.137s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages'
+[2.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'pythonpath')
+[2.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.ps1'
+[2.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.dsv'
+[2.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.sh'
+[2.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[2.143s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[2.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[2.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[2.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[2.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[2.147s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk_examples' with build type 'ament_cmake'
+[2.147s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/DynamixelSDK/dynamixel_sdk_examples'
+[2.148s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.148s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.153s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[2.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples -- -j8 -l8
+[2.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_msgs)
+[2.266s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs' for CMake module files
+[2.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_msgs --target install -- -j8 -l8
+[2.268s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs' for CMake config files
+[2.268s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'cmake_prefix_path')
+[2.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.ps1'
+[2.270s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.dsv'
+[2.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.sh'
+[2.271s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib'
+[2.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'ld_library_path_lib')
+[2.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.ps1'
+[2.272s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.dsv'
+[2.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.sh'
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/bin'
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/pkgconfig/turtlebot3_msgs.pc'
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages'
+[2.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'pythonpath')
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.ps1'
+[2.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.dsv'
+[2.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.sh'
+[2.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.ps1'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.dsv'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.sh'
+[2.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.bash'
+[2.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.zsh'
+[2.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/colcon-core/packages/turtlebot3_msgs)
+[2.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples -- -j8 -l8
+[2.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples --target install -- -j8 -l8
+[2.486s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[2.489s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples' for CMake module files
+[2.490s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples' for CMake config files
+[2.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[2.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[2.493s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[2.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[2.495s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/lib'
+[2.496s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/bin'
+[2.496s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[2.496s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/lib/python3.6/site-packages'
+[2.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[2.498s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[2.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[2.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[2.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/dynamixel_sdk_examples --target install -- -j8 -l8
+[2.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[2.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[2.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_examples)
+[2.558s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples' for CMake module files
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples' for CMake config files
+[2.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_examples', 'cmake_prefix_path')
+[2.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.ps1'
+[2.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.dsv'
+[2.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/hook/cmake_prefix_path.sh'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/lib'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/bin'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/lib/pkgconfig/dynamixel_sdk_examples.pc'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/lib/python3.6/site-packages'
+[2.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.ps1'
+[2.567s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv'
+[2.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.sh'
+[2.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.bash'
+[2.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.zsh'
+[2.570s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples/share/colcon-core/packages/dynamixel_sdk_examples)
+[2.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_msgs)
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs' for CMake module files
+[2.619s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs' for CMake config files
+[2.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'cmake_prefix_path')
+[2.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.ps1'
+[2.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.dsv'
+[2.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/cmake_prefix_path.sh'
+[2.624s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib'
+[2.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'ld_library_path_lib')
+[2.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.ps1'
+[2.627s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.dsv'
+[2.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/ld_library_path_lib.sh'
+[2.629s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/bin'
+[2.629s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/pkgconfig/turtlebot3_msgs.pc'
+[2.629s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages'
+[2.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_msgs', 'pythonpath')
+[2.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.ps1'
+[2.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.dsv'
+[2.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/hook/pythonpath.sh'
+[2.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.ps1'
+[2.635s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.dsv'
+[2.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.sh'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.bash'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.zsh'
+[2.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/share/colcon-core/packages/turtlebot3_msgs)
+[2.639s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_node' with build type 'ament_cmake'
+[2.639s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_node'
+[2.640s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.641s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.647s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[2.651s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_example' with build type 'ament_python'
+[2.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_example', 'ament_prefix_path')
+[2.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.ps1'
+[2.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.dsv'
+[2.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/ament_prefix_path.sh'
+[2.658s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.658s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.664s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[2.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_node -- -j8 -l8
+[3.235s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_example'
+[3.237s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.237s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.243s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[3.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_node -- -j8 -l8
+[3.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_example': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_example --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/install.log --single-version-externally-managed
+[3.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_node --target install -- -j8 -l8
+[3.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_node)
+[3.594s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node' for CMake module files
+[3.595s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node' for CMake config files
+[3.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_node', 'cmake_prefix_path')
+[3.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.ps1'
+[3.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.dsv'
+[3.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.sh'
+[3.599s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/lib'
+[3.600s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/bin'
+[3.600s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/lib/pkgconfig/turtlebot3_node.pc'
+[3.600s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/lib/python3.6/site-packages'
+[3.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.ps1'
+[3.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv'
+[3.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.sh'
+[3.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.bash'
+[3.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.zsh'
+[3.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_node --target install -- -j8 -l8
+[3.604s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/colcon-core/packages/turtlebot3_node)
+[3.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_node)
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node' for CMake module files
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node' for CMake config files
+[3.716s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_node', 'cmake_prefix_path')
+[3.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.ps1'
+[3.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.dsv'
+[3.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/hook/cmake_prefix_path.sh'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/lib'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/bin'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/lib/pkgconfig/turtlebot3_node.pc'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/lib/python3.6/site-packages'
+[3.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.ps1'
+[3.724s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv'
+[3.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.sh'
+[3.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.bash'
+[3.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.zsh'
+[3.727s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_node/share/colcon-core/packages/turtlebot3_node)
+[3.728s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup' with build type 'ament_cmake'
+[3.729s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup'
+[3.730s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.730s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.736s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[3.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup -- -j8 -l8
+[3.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup' returned '0': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup -- -j8 -l8
+[3.876s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example' for CMake module files
+[3.877s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example' for CMake config files
+[3.879s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib'
+[3.879s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/bin'
+[3.879s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/pkgconfig/turtlebot3_example.pc'
+[3.879s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages'
+[3.879s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_example', 'pythonpath')
+[3.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.ps1'
+[3.881s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.dsv'
+[3.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/hook/pythonpath.sh'
+[3.882s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_example)
+[3.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.ps1'
+[3.884s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.dsv'
+[3.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.sh'
+[3.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.bash'
+[3.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example/package.zsh'
+[3.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3_example' returned '0': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/build install --prefix /home/yubinwang/turtlebot3_ws/install/turtlebot3_example --record /home/yubinwang/turtlebot3_ws/build/turtlebot3_example/install.log --single-version-externally-managed
+[3.888s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/share/colcon-core/packages/turtlebot3_example)
+[3.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup --target install -- -j8 -l8
+[4.002s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_bringup)
+[4.004s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup' for CMake module files
+[4.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup' returned '0': CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3_bringup --target install -- -j8 -l8
+[4.006s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup' for CMake config files
+[4.006s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_bringup', 'cmake_prefix_path')
+[4.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.ps1'
+[4.009s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.dsv'
+[4.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.sh'
+[4.011s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/bin'
+[4.012s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/lib/pkgconfig/turtlebot3_bringup.pc'
+[4.012s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/lib/python3.6/site-packages'
+[4.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.ps1'
+[4.015s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.dsv'
+[4.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.sh'
+[4.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.bash'
+[4.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.zsh'
+[4.018s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/colcon-core/packages/turtlebot3_bringup)
+[4.060s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_bringup)
+[4.063s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup' for CMake module files
+[4.064s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup' for CMake config files
+[4.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_bringup', 'cmake_prefix_path')
+[4.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.ps1'
+[4.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.dsv'
+[4.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/hook/cmake_prefix_path.sh'
+[4.068s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/bin'
+[4.069s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/lib/pkgconfig/turtlebot3_bringup.pc'
+[4.069s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/lib/python3.6/site-packages'
+[4.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.ps1'
+[4.071s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.dsv'
+[4.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.sh'
+[4.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.bash'
+[4.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.zsh'
+[4.075s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup/share/colcon-core/packages/turtlebot3_bringup)
+[4.077s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3' with build type 'ament_cmake'
+[4.078s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yubinwang/turtlebot3_ws/src/turtlebot3/turtlebot3'
+[4.080s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.080s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.087s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[4.117s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3': AMENT_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/dashing CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3 -- -j8 -l8
+[4.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/dashing CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3 -- -j8 -l8
+[4.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3': AMENT_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/dashing CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3 --target install -- -j8 -l8
+[4.324s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[4.326s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3' for CMake module files
+[4.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yubinwang/turtlebot3_ws/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/dashing CMAKE_PREFIX_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_bringup:/home/yubinwang/turtlebot3_ws/install/turtlebot3_node:/home/yubinwang/turtlebot3_ws/install/turtlebot3_navigation2:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs:/home/yubinwang/turtlebot3_ws/install/turtlebot3_description:/home/yubinwang/turtlebot3_ws/install/turtlebot3_cartographer:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk:/home/yubinwang/turtlebot3_ws/install/turtlebot3:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_examples:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop:/home/yubinwang/turtlebot3_ws/install/turtlebot3_example:/opt/ros/dashing LD_LIBRARY_PATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk/lib:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PYTHONPATH=/home/yubinwang/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/yubinwang/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/cmake --build /home/yubinwang/turtlebot3_ws/build/turtlebot3 --target install -- -j8 -l8
+[4.328s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3' for CMake config files
+[4.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'cmake_prefix_path')
+[4.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.ps1'
+[4.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.dsv'
+[4.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.sh'
+[4.332s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3/bin'
+[4.332s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[4.332s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3/lib/python3.6/site-packages'
+[4.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.ps1'
+[4.335s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.dsv'
+[4.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.sh'
+[4.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.bash'
+[4.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.zsh'
+[4.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[4.379s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[4.381s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3' for CMake module files
+[4.382s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3' for CMake config files
+[4.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'cmake_prefix_path')
+[4.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.ps1'
+[4.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.dsv'
+[4.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/hook/cmake_prefix_path.sh'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3/bin'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/home/yubinwang/turtlebot3_ws/install/turtlebot3/lib/python3.6/site-packages'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.ps1'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.dsv'
+[4.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.sh'
+[4.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.bash'
+[4.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/turtlebot3/package.zsh'
+[4.390s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yubinwang/turtlebot3_ws/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[4.390s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.393s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.393s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.393s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.403s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.404s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.404s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.407s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.408s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yubinwang/turtlebot3_ws/install/local_setup.ps1'
+[4.410s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yubinwang/turtlebot3_ws/install/_local_setup_util_ps1.py'
+[4.413s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yubinwang/turtlebot3_ws/install/setup.ps1'
+[4.420s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yubinwang/turtlebot3_ws/install/local_setup.sh'
+[4.421s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yubinwang/turtlebot3_ws/install/_local_setup_util_sh.py'
+[4.422s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yubinwang/turtlebot3_ws/install/setup.sh'
+[4.429s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yubinwang/turtlebot3_ws/install/local_setup.bash'
+[4.430s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yubinwang/turtlebot3_ws/install/setup.bash'
+[4.436s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yubinwang/turtlebot3_ws/install/local_setup.zsh'
+[4.437s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yubinwang/turtlebot3_ws/install/setup.zsh'

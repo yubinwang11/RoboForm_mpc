@@ -22,6 +22,7 @@ import numpy as np
 import sys
 import termios
 import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 import random 
 import rclpy
 
@@ -68,7 +69,7 @@ class Turtlebot3PositionControl(Node):
         self.buttonstart=0
 
         ######## initialize mpc ##########
-        self.T = 0.3  # [s]
+        self.T = 0.3  # [s] # 0.3
         self.N = 35  
         self.m = 6
         self.M = int(self.m * (self.m -1)/2)
@@ -150,8 +151,8 @@ class Turtlebot3PositionControl(Node):
         self.x_right=np.array([0.0 for x in range(self.node_num)])
         self.y_right=np.array([0.0 for x in range(self.node_num)])
 
-        self.x_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)]).T
-        self.y_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)]).T
+        self.x_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
+        self.y_curl=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
         
         self.x_curr=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
         self.y_curr=np.array([[0.0 for x in range(2)] for y in range(self.node_num)])
@@ -187,14 +188,14 @@ class Turtlebot3PositionControl(Node):
         qos = QoSProfile(depth=10)
 
         # Initialise publishers
-        '''
+        
         self.tb30_cmd_vel_pub = self.create_publisher(Twist,'tb3_0/cmd_vel', qos)
         self.tb31_cmd_vel_pub = self.create_publisher(Twist,'tb3_1/cmd_vel', qos)
         self.tb32_cmd_vel_pub = self.create_publisher(Twist,'tb3_2/cmd_vel', qos)
         self.tb33_cmd_vel_pub = self.create_publisher(Twist,'tb3_3/cmd_vel', qos)
         self.tb34_cmd_vel_pub = self.create_publisher(Twist,'tb3_4/cmd_vel', qos)
         self.tb35_cmd_vel_pub = self.create_publisher(Twist,'tb3_5/cmd_vel', qos)
-        '''
+        
 
         # Initialise subscribers
         '''
@@ -467,6 +468,7 @@ class Turtlebot3PositionControl(Node):
             if self.ne < 0.1:
                 print("mpciter, error: ", mpciter, self.ne)
                 print("Robot has arrived to GOAL point!")
+                self.save_gif()
                 exit()
 
             print("mpciter, error: ", mpciter, self.ne)
@@ -506,6 +508,10 @@ class Turtlebot3PositionControl(Node):
              
     ''' 
     def mpc_implement(self):
+        self.fig = plt.figure()
+
+        self.ims = []
+
         self.pre_mpc()
         self.start_mpc()  
     
@@ -518,6 +524,8 @@ class Turtlebot3PositionControl(Node):
 
 ##########################################################################################################################          
     def unicycle_simulation(self):
+
+
         r = 0.15
      
         theta = np.arange(0, 2*np.pi, 0.01)
@@ -542,47 +550,43 @@ class Turtlebot3PositionControl(Node):
 
             self.x_right[i]=self.x_cur[i]-r*math.cos(self.theta_cur[i]-1.57)
             self.y_right[i]=self.y_cur[i]-r*math.sin(self.theta_cur[i]-1.57)
-            '''
+            
             self.x_curl[i][0]=self.x_head[i]
             self.x_curl[i][1]=self.x_cur[i]
 
             self.y_curl[i][0]=self.y_head[i]
             self.y_curl[i][1]=self.y_cur[i]
-            '''
+            
+        
         for i in range(0, self.node_num, 1):
-            #plt.plot(self.x_curl, self.y_curl)        
-            #plt.plot(self.x_head,self.y_head,self.colorArr,self.x_left,self.y_left,self.colorArr,self.x_right,self.y_right,self.colorArr,self.x_cur,self.y_cur,self.colorArr,marker='.')
-            '''
-            plt.plot(self.x_head,self.y_head,marker='.')
-            plt.plot(self.x_left,self.y_left,marker='.')
-            plt.plot(self.x_right,self.y_right,marker='.')
-            plt.plot(self.x_cur,self.y_cur,marker='.')
-            plt.plot(self.x_body,self.y_body)
-            '''
-            #plt.plot(self.x_curl[i], self.y_curl[i],self.colorArr[i])
             
             plt.plot(self.x_head[i],self.y_head[i],self.colorArr[i],self.x_left[i],self.y_left[i],self.colorArr[i],self.x_right[i],self.y_right[i],self.colorArr[i],self.x_cur[i],self.y_cur[i],self.colorArr[i],marker='.')
-            
             plt.plot(self.x_body[i],self.y_body[i],self.colorArr[i])
+            ''''''
+            #im = plt.plot(self.x_curl[i], self.y_curl[i], self.colorArr[i],self.x_body[i],self.y_body[i],self.colorArr[i], self.x_head[i],self.y_head[i],self.x_left[i],self.y_left[i],self.x_right[i],self.y_right[i],self.x_cur[i],self.y_cur[i],self.colorArr[i],marker='.')
+            #self.ims.append(im)
+        self.axis=1
+        plt.plot(self.axis*3,self.axis*2,self.colorArr[i],marker='*')
+        plt.plot(self.axis*3,-self.axis*2,self.colorArr[i],marker='*')
+        plt.plot(-self.axis*3,self.axis*2,self.colorArr[i],marker='*')
+        plt.plot(-self.axis*3,-self.axis*2,self.colorArr[i],marker='*')  
 
-      
-        '''
-        plt.text(self.x_cur[i], self.y_cur[i]-self.axis/10, '%.2f' %self.x_cur[i], ha='center', va= 'bottom',fontsize=6,color = self.colorArr[i])
-        plt.text(self.x_cur[i], self.y_cur[i]-self.axis/5, '%.2f' %self.y_cur[i], ha='center', va= 'bottom',fontsize=6,color = self.colorArr[i])
-        '''
-
-        
         plt.grid(True)
         plt.axis('equal')
-
+        plt.axis([-self.axis*3,self.axis*3,-self.axis*2,self.axis*2])
         if self.number<=10000:
             plt.pause(0.01)
             plt.clf()
         else :
             plt.show()   
 
-             
-########################################################################################################################
+    def save_gif(self):
+        self.ani = animation.ArtistAnimation(self.fig, self.ims, interval=200, repeat_delay=1000)
+        #self.ani.save("~/gifs/test.gif",writer='pillow')
+        self.ani.save("~/gifs/test.gif", fps=30) 
+        print('save to ~/gifs/test.gif')
+
+#####################################################
    
 ######################################################################################################################## 
  

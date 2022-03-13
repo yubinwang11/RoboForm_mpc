@@ -17,6 +17,7 @@
 # Authors: Du Yong, Wang Yubin
 
 import math
+from os import path
 import numpy
 import numpy as np
 import sys
@@ -69,6 +70,7 @@ class Turtlebot3PositionControl(Node):
         self.buttonstart=0
 
         ######## initialize mpc ##########
+        self.mpciter = 0
         self.T = 0.3  # [s] # 0.3
         self.N = 35  
         self.m = 6
@@ -477,6 +479,7 @@ class Turtlebot3PositionControl(Node):
             print("mpciter, error: ", mpciter, self.ne)
             self.unicycle_simulation()
             mpciter = mpciter + 1
+            self.mpciter = mpciter
             num = num + 1
             self.number = num
         # main_loop_time = toc(main_loop);
@@ -527,7 +530,6 @@ class Turtlebot3PositionControl(Node):
 
 ##########################################################################################################################          
     def unicycle_simulation(self):
-
 
         r = 0.15
      
@@ -585,17 +587,23 @@ class Turtlebot3PositionControl(Node):
         plt.grid(True)
         plt.axis('equal')
         plt.axis([-self.axis*3,self.axis*3,-self.axis*2,self.axis*2])
+
+        plt.savefig('./_{}.png'.format(self.mpciter))
+        print('saved')
+
         if self.number<=10000:
             plt.pause(0.01)
             plt.clf()
+            
         else :
-            plt.show()   
+            plt.show()
+            
 
     def save_gif(self):
         self.ani = animation.ArtistAnimation(self.fig, self.ims, interval=200, repeat_delay=1000)
         #self.ani.save("~/gifs/test.gif",writer='pillow')
         self.ani.save("~/gifs/test.gif", fps=30) 
-        print('save to ~/gifs/test.gif')
+        #print('save to ~/gifs/test.gif')
 
 #####################################################
    

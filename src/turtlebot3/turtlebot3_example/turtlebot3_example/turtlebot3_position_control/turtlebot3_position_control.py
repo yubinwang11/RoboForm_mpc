@@ -160,6 +160,9 @@ class Turtlebot3PositionControl(Node):
         self.x_body=[0.0 for x in range(self.node_num)]
         self.y_body=[0.0 for x in range(self.node_num)]
 
+        self.x_tar=[0.0 for x in range(self.node_num)]
+        self.y_tar=[0.0 for x in range(self.node_num)]
+
         self.odom = Odometry()
         self.twisttb30 = Twist()
         #self.twisttb31 = Twist()
@@ -538,10 +541,18 @@ class Turtlebot3PositionControl(Node):
         #print(self.x_cur)
         #print(self.y_cur)
 
+        self.x_tar[0] = self.xs[0]; self.x_tar[1] = self.xs[3]; self.x_tar[2] = self.xs[6]; 
+        self.x_tar[3] = self.xs[9]; self.x_tar[4] = self.xs[12]; self.x_tar[5] = self.xs[15]; 
+        self.y_tar[0] = self.xs[1]; self.y_tar[1] = self.xs[4]; self.y_tar[2] = self.xs[7]; 
+        self.y_tar[3] = self.xs[10]; self.y_tar[4] = self.xs[13]; self.y_tar[5] = self.xs[16]; 
+
         for i in range(0, self.node_num, 1):
             self.x_body[i] = self.x_cur[i] + r * np.cos(theta)
             self.y_body[i] = self.y_cur[i] + r * np.sin(theta)
-            
+
+            self.x_tar[i] = self.x_tar[i] + r * np.cos(theta)
+            self.y_tar[i] = self.y_tar[i] + r * np.sin(theta)
+
             self.x_head[i]=self.x_cur[i]+r*math.cos(self.theta_cur[i])
             self.y_head[i]=self.y_cur[i]+r*math.sin(self.theta_cur[i])
 
@@ -561,7 +572,7 @@ class Turtlebot3PositionControl(Node):
         for i in range(0, self.node_num, 1):
             
             plt.plot(self.x_head[i],self.y_head[i],self.colorArr[i],self.x_left[i],self.y_left[i],self.colorArr[i],self.x_right[i],self.y_right[i],self.colorArr[i],self.x_cur[i],self.y_cur[i],self.colorArr[i],marker='.')
-            plt.plot(self.x_body[i],self.y_body[i],self.colorArr[i])
+            plt.plot(self.x_body[i],self.y_body[i],self.x_tar[i],self.y_tar[i],self.colorArr[i])
             ''''''
             #im = plt.plot(self.x_curl[i], self.y_curl[i], self.colorArr[i],self.x_body[i],self.y_body[i],self.colorArr[i], self.x_head[i],self.y_head[i],self.x_left[i],self.y_left[i],self.x_right[i],self.y_right[i],self.x_cur[i],self.y_cur[i],self.colorArr[i],marker='.')
             #self.ims.append(im)

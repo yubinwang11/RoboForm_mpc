@@ -572,7 +572,7 @@ class Turtlebot3PositionControl(Node):
         for i in range(0, self.node_num, 1):
             
             plt.plot(self.x_head[i],self.y_head[i],self.colorArr[i],self.x_left[i],self.y_left[i],self.colorArr[i],self.x_right[i],self.y_right[i],self.colorArr[i],self.x_cur[i],self.y_cur[i],self.colorArr[i],marker='.')
-            plt.plot(self.x_body[i],self.y_body[i],self.x_tar[i],self.y_tar[i],self.colorArr[i])
+            plt.plot(self.x_body[i],self.y_body[i],self.colorArr[i],self.x_tar[i],self.y_tar[i],self.colorArr[i])
             ''''''
             #im = plt.plot(self.x_curl[i], self.y_curl[i], self.colorArr[i],self.x_body[i],self.y_body[i],self.colorArr[i], self.x_head[i],self.y_head[i],self.x_left[i],self.y_left[i],self.x_right[i],self.y_right[i],self.x_cur[i],self.y_cur[i],self.colorArr[i],marker='.')
             #self.ims.append(im)
